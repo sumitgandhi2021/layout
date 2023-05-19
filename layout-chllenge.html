@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            float: right ;
+            width: 90%;
+            background-color: #E5F9DB;
+            text-align: center;
+            height: 20vh;
+        }
+        header h2{
+            font-size: xx-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            float: left;
+            height:100vh;
+            background-color: #A0D8B3;
+            width: 10%;
+            text-align: center;
+        }
+        nav a{
+            margin: 10px;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+        section{
+            height: 60vh;
+        }
+        footer{
+            width: 90%;
+            background-color: #83764F;
+            display: flex;
+            /* float: right; */
+        }
+        footer div{
+            margin: 10px 100px;
+            display: grid;
+            border: 1px solid black;
+            padding:10px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+        }
+        footer div a{
+            text-decoration: none;
+        }
+        footer h4{
+            margin: 0;
+            padding: 0;
+            font-size: large;
+        }
+       img{
+            position: relative;
+            top: 5px;
+            
+        }
+        @media screen and (max-width:600px) {
+            header{
+                width: 100%;
+            }
+            nav{
+                display: flex;
+                flex-direction: row;
+                float: none;
+                width: 100%;
+                height:auto;
+                
+            }
+            footer{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: justify;
+                width: 100%;
+                float: none;
+                align-items: center;
+            }
+            footer div{
+                margin: 10px 20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h2>Apna college</h2>
+    </header>
+    <nav>
+        <a href=""> Home </a>
+        <a href="">About</a>
+        <a href="">Work</a>
+        <a href="">Sign in</a>
+    </nav>
+    <section>
+        <Span>Course</Span>
+    </section>
+    <footer>
+        <div>
+        <a href="#"> Home </a>
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Sign in</a>
+        </div>
+        <div></div>
+        <div style="display: grid; text-align: center;">
+            <h4>Social Media</h4>
+            <a href="">
+             <img width="20" height="20" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/>Instagram</a>
+
+            <a href="" class="facebook"> 
+                <img width="20" height="20" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>Facebook
+            </a>
+            <a href="">
+                <img width="20" height="20" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>Youtube
+            </a>
+            <a href="">
+                <img width="20" height="20" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>linkedin
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
